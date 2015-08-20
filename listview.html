@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <link href="jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+    <title></title>
+</head>
+<body>
+<div data-role="page" >
+    <div data-role="header" data-position="fixed">
+            <h1>head</h1>
+    </div>
+
+    <div data-role="content">
+
+        <ul data-role="listview">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+        </ul>
+
+        <ol data-role="listview">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+        </ol>
+
+        <ol data-role="listview">
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">D</a></li>
+        </ol>
+        <hr>
+
+        <ul data-role="listview" data-filter="true" data-inset="true">
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">D</a></li>
+        </ul>
+
+        <br>
+
+        <br>
+        <form class="ui-filterable">
+            <input id="autoinput" data-type="search">
+        </form>
+        <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#autoinput" data-inset="true">
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">D</a></li>
+            <li><a href="#">A</a></li>
+            <li><a href="#">C</a></li>
+
+        </ul>
+
+        <br>
+        <br>
+        <hr>
+        <ul data-role="listview"  data-autodividers="true" data-filter="true" data-inset="true">
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">codeC</a></li>
+            <li><a href="#">D</a></li>
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">D</a></li>
+
+
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <h1>footer</h1>
+    </div>
+</div>
+</body>
+</html>
