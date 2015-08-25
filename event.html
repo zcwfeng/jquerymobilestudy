@@ -2,29 +2,68 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <script src="jquery-2.1.4.min.js"></script>
     <script src="jquery.mobile-1.4.5.min.js"></script>
-    <link href="jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css">
     <title></title>
+    <script>
+        $(document).on("pageinit",function(){
+            $("p").on("swipe",function(){
+//                $(this).hide();
+            });
+            $("p").on("swipeleft",function(){
+            });
+            $("p").on("swiperight",function(){
+            });
+            $("p").on("taphold",function(){
+
+            });
+            $("p").on("tap",function(){
+            });
+
+            $(this).on("scrollstart",function(){
+//                alert("scroll start");
+            });
+
+            $(this).on("scrollstop",function(){
+                alert("scroll scrollstop");
+            });
+
+        });
+
+
+
+    </script>
 </head>
 <body>
-<div data-role="page" >
+
+<div data-role="page">
     <div data-role="header" data-position="fixed">
-            <h1>head</h1>
+        <h1>head</h1>
+    </div>
+    <div data-role="content" >
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
+        <p>contetn</p>
     </div>
 
-    <div data-role="content">
-
-
-        <p>内容</p>
-
-
-
-    </div>
     <div data-role="footer" data-position="fixed">
         <h1>footer</h1>
     </div>
+
 </div>
+
 </body>
 </html>
